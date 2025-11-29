@@ -4,42 +4,149 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Política de Privacidad - PrecioDolar</title>
+
+  <style>
+    body {
+      font-family: system-ui, Roboto, Arial, sans-serif;
+      background: #e8f4ff; /* celeste muy suave */
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0, 87, 146, 0.15); /* sombra celeste */
+      border-top: 6px solid #68aefc; /* celeste fuerte */
+    }
+
+    h1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 2rem;
+      color: #005bbb; /* celeste bandera */
+    }
+
+    h2 {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #005bbb;
+      border-left: 4px solid #005bbb;
+      padding-left: 10px;
+      font-size: 1.35rem;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .updated {
+      margin-bottom: 24px;
+      font-style: italic;
+      color: #333;
+    }
+
+    .icon {
+      width: 22px;
+      height: 22px;
+      opacity: 0.9;
+    }
+  </style>
 </head>
-<body style="font-family:system-ui,Roboto,Arial,sans-serif;line-height:1.6;margin:32px;max-width:900px;">
-  <h1>Política de Privacidad – Extensión “PrecioDolar - Cotización dólar Argentina”</h1>
-  <p><strong>Última actualización:</strong> 2025-XX-XX</p>
 
-  <h2>1. Introducción</h2>
-  <p>La extensión <strong>PrecioDolar - Cotización dólar Argentina</strong> proporciona información pública sobre cotizaciones del dólar. Esta extensión no recopila ni transmite datos personales de los usuarios.</p>
+<body>
+  <div class="container">
+    <h1>
+      <svg class="icon" viewBox="0 0 24 24" fill="#005bbb">
+        <path d="M12 2L2 7l10 5 10-5-10-5zm0 7l-10-5v9l10 5 10-5V4l-10 5z"/>
+      </svg>
+      Política de Privacidad – PrecioDolar
+    </h1>
 
-  <h2>2. Datos que recopilamos</h2>
-  <p>La extensión <strong>NO</strong> recopila:</p>
-  <ul>
-    <li>Información personal identificable</li>
-    <li>Direcciones IP</li>
-    <li>Cookies o identificadores del dispositivo</li>
-    <li>Información financiera del usuario</li>
-  </ul>
+    <p class="updated"><strong>Última actualización:</strong> 2025-11-29</p>
 
-  <h2>3. Permisos utilizados</h2>
-  <p>Para su funcionamiento, la extensión solicita permisos mínimos:</p>
-  <ul>
-    <li><strong>storage</strong>: para guardar preferencias locales del usuario (tema, configuración de alertas, tipo de cambio favorito). Los datos quedan en el dispositivo y no se transmiten a servidores externos.</li>
-    <li><strong>notifications</strong>: para enviar alertas opcionales sobre cambios de cotización cuando el usuario habilita esa función.</li>
-    <li><strong>host permissions</strong>: acceso a las APIs públicas que proveen cotizaciones (por ejemplo <code>https://dolarapi.com/</code> u otras URLs públicas). La extensión solo realiza peticiones de lectura para mostrar valores actualizados.</li>
-  </ul>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="#005bbb">
+        <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+      </svg>
+      1. Introducción
+    </h2>
+    <p>
+      La extensión <strong>PrecioDolar - Cotización dólar Argentina</strong> muestra información pública de cotizaciones.
+      No recopilamos ni enviamos datos personales.
+    </p>
 
-  <h2>4. Uso de servicios externos</h2>
-  <p>La extensión puede consultar APIs públicas para obtener cotizaciones. No se envía información personal a esos servicios; solo se consultan datos públicos.</p>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="#005bbb">
+        <path d="M3 3h18v2H3V3zm0 5h12v2H3V8zm0 5h18v2H3v-2zm0 5h12v2H3v-2z"/>
+      </svg>
+      2. Datos que recopilamos
+    </h2>
+    <p>La extensión <strong>NO</strong> recopila:</p>
+    <ul>
+      <li>Información personal identificable</li>
+      <li>Direcciones IP</li>
+      <li>Cookies o identificadores del dispositivo</li>
+      <li>Información financiera del usuario</li>
+    </ul>
 
-  <h2>5. Transferencia y seguridad</h2>
-  <p>No compartimos, vendemos ni comercializamos datos de usuarios. No almacenamos información personal en servidores externos.</p>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="#005bbb">
+        <path d="M12 2a5 5 0 00-5 5v3H5l-1 2v9h16v-9l-1-2h-2V7a5 5 0 00-5-5z"/>
+      </svg>
+      3. Permisos utilizados
+    </h2>
+    <ul>
+      <li><strong>storage:</strong> solo guarda preferencias locales.</li>
+      <li><strong>notifications:</strong> alertas opcionales sobre cotizaciones.</li>
+      <li><strong>host permissions:</strong> acceso de lectura a APIs públicas.</li>
+    </ul>
 
-  <h2>6. Contacto</h2>
-  <p>Si querés contactarme o tenés dudas: <strong>arroyomatias19@gmail.com</strong></p>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="#005bbb">
+        <path d="M4 4h16v2H4zm0 4h10v2H4zm0 4h16v2H4zm0 4h10v2H4z"/>
+      </svg>
+      4. Uso de servicios externos
+    </h2>
+    <p>
+      Consultamos APIs públicas de cotización (como <code>dolarapi.com</code>).  
+      Nunca enviamos información personal.
+    </p>
 
-  <footer style="margin-top:32px;font-size:0.9em;color:#555;">
-    <p>Extensión: PrecioDolar - Cotización dólar Argentina</p>
-  </footer>
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="#005bbb">
+        <path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/>
+      </svg>
+      5. Transferencia y seguridad
+    </h2>
+    <p>No vendemos ni compartimos información. No almacenamos datos personales.</p>
+
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24" fill="#005bbb">
+        <path d="M21 8V7l-3 2-2-1-4 2-4-2-2 1-3-2v1l3 2v6l6 3 6-3v-6l3-2z"/>
+      </svg>
+      6. Contacto
+    </h2>
+    <p>Correo: <strong>arroyomatias19@gmail.com</strong></p>
+
+    <footer>
+      Extensión: <strong>PrecioDolar - Cotización dólar Argentina</strong>
+    </footer>
+  </div>
 </body>
 </html>
