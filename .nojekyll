@@ -1,0 +1,3 @@
+cd ~/PrecioDolar-privacy
+touch .nojekyll
+echo "" > .nojekyll
